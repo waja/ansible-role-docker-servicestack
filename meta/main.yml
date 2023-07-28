@@ -1,0 +1,21 @@
+---
+galaxy_info:
+  author: waja
+  role_name: dockerservicestack
+  description: ansible role for deploying serverice container for docker in Debian
+  company: none
+
+  license: GPLv3
+
+  min_ansible_version: '2.9'
+  platforms:
+    - name: Debian
+      versions:
+        - all
+
+  galaxy_tags:
+    - debian
+    - docker
+
+dependencies: 
+    - geerlingguy.docker

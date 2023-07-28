@@ -1,0 +1,3 @@
+---
+- name: Deploy watchtower container stack
+  ansible.builtin.include_tasks: watchtower.yml
