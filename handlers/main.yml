@@ -1,5 +1,5 @@
 ---
-- name: Watchtower: Start watchtower container via systemd
+- name: Watchtower - Start watchtower container via systemd
   ansible.builtin.systemd:
     name: watchtower
     state: started

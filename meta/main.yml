@@ -17,5 +17,5 @@ galaxy_info:
     - debian
     - docker
 
-dependencies: 
-    - geerlingguy.docker
+dependencies:
+  - geerlingguy.docker
