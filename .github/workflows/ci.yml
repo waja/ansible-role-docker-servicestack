@@ -33,7 +33,7 @@ jobs:
 
       - name: Lint Ansible.
         run: |
-          ansible-lint --offline -v
+          ansible-lint
 
   molecule:
     name: Molecule
