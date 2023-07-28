@@ -25,6 +25,8 @@ lint:
   image: python:latest
   before_script:
     - pip3 install yamllint ansible-lint
+    - pip3 install ansible-core
+    - ansible-galaxy install -g -f -r meta/requirements.yml
   script:
     - yamllint .
     - ansible-lint --offline -v
