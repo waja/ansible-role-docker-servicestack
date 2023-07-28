@@ -18,4 +18,4 @@ galaxy_info:
     - docker
 
 dependencies:
-  - geerlingguy.docker
+  - { role: geerlingguy.docker }
