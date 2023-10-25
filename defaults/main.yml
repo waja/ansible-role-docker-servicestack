@@ -1,2 +1,5 @@
 ---
 docker_base_dir: "/srv/docker"
+
+# Service options.
+watchtower_service_state: started

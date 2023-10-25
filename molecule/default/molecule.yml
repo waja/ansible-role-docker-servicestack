@@ -23,6 +23,10 @@ platforms:
 provisioner:
   name: ansible
   log: true
+  inventory:
+    group_vars:
+      all:
+        watchtower_service_state: stopped
   playbooks:
     converge: ${MOLECULE_PLAYBOOK:-converge.yml}
 scenario:
