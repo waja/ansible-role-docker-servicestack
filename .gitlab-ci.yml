@@ -27,6 +27,8 @@ lint:
     - pip3 install yamllint ansible-lint
   script:
     - yamllint .
+    # Needed cause ansible-lint checks for depending roles
+    - ansible-galaxy role install geerlingguy.docker
     - ansible-lint --offline -v
 
 .molecule_test: &molecule_test
