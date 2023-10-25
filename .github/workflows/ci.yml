@@ -33,7 +33,8 @@ jobs:
 
       - name: Lint Ansible.
         run: |
-          ansible-lint --offline -v
+          ansible-galaxy role install geerlingguy.docker
+          ansible-lint
 
   molecule:
     name: Molecule
