@@ -28,7 +28,7 @@
 
 - name: Watchtower - Create docker-compose.yml symlink to container.conf/
   ansible.builtin.file:
-    path: container.conf/docker-compose.yml
+    src: container.conf/docker-compose.yml
     dest: "{{ docker_base_dir }}/watchtower/docker-compose.yml"
     owner: root
     group: root
@@ -77,7 +77,7 @@
 
 - name: Watchtower - Create systemd unit file symlink to /etc/systemd/system/
   ansible.builtin.file:
-    path: "{{ docker_base_dir }}/watchtower/container.conf/watchtower.service"
+    src: "{{ docker_base_dir }}/watchtower/container.conf/watchtower.service"
     dest: /etc/systemd/system/watchtower.service
     owner: root
     group: root
