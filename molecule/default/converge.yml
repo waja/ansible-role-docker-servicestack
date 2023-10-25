@@ -6,10 +6,10 @@
     - role: waja.dockerservicestack
 
   # https://raw.githubusercontent.com/geerlingguy/ansible-role-docker/master/molecule/default/converge.yml
-#  pre_tasks:
-#    - name: Update apt cache.
-#      ansible.builtin.apt: update_cache=yes cache_valid_time=600
-#      when: ansible_os_family == 'Debian'
+  pre_tasks:
+    - name: Update apt cache.
+      ansible.builtin.apt: update_cache=yes cache_valid_time=600
+      when: ansible_os_family == 'Debian'
 
     - name: Wait for systemd to complete initialization.  # noqa 303
       command: systemctl is-system-running

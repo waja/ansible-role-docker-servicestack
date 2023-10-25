@@ -11,6 +11,6 @@
           #!/bin/bash
           exit 0
         mode: 0755
-    - name: "Update package cache"
-      ansible.builtin.apt:
-        update_cache: true
+#    - name: "Update package cache"
+#      ansible.builtin.apt:
+#        update_cache: true
