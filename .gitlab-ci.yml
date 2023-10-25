@@ -29,7 +29,7 @@ lint:
     - yamllint .
     # Needed cause ansible-lint checks for depending roles
     - ansible-galaxy role install geerlingguy.docker
-    - ansible-lint --offline -v
+    - ansible-lint
 
 .molecule_test: &molecule_test
   stage: test
